@@ -9,9 +9,8 @@ namespace ConsoleApp1
 	public class MallardDuck : Duck
 	{
 		public MallardDuck()
+			:base(new Quack(), new FlyWithWings())
 		{
-			IQuackBehaviour quackBehaviour = new Quack();
-			IFlyBehaviour flyBehaviour = new FlyWithWings();
 		}
 
 		public override void display()

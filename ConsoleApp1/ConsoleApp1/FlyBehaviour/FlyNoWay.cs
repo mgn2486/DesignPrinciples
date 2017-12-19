@@ -10,7 +10,7 @@ namespace ConsoleApp1
 	{
 		public void fly()
 		{
-			Console.WriteLine("I can't fly!!!");
+			Console.WriteLine("I cannot fly!!!");
 		}
 	}
 }
