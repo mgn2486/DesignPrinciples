@@ -62,7 +62,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
     <Compile Include="DuckTypes\RedHeadDuk.cs" />
+    <Compile Include="DuckTypes\RubberDuck.cs" />
     <Compile Include="FlyBehaviour\FlyRocketPowered.cs" />
     <Compile Include="DuckTypes\Duck.cs" />
     <Compile Include="DuckTypes\ModelDuck.cs" />
