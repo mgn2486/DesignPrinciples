@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.DuckTypes
 {
 	public abstract class Duck
 	{
 		private IQuackBehaviour _quackBehaviour;
 		private IFlyBehaviour _flyBehavior;
-
-		public abstract void display();
 
 		public Duck(IQuackBehaviour quackBehaviour, IFlyBehaviour flyBehavior)
 		{
@@ -19,19 +13,21 @@ namespace ConsoleApp1
 			_flyBehavior = flyBehavior;
 		}
 
+		public abstract void Display();
+
 		public void PerformQuack()
 		{
-			_quackBehaviour.quack();
+			_quackBehaviour.Quack();
 		}
 
 		public void PerformFly()
 		{
-			_flyBehavior.fly();
+			_flyBehavior.Fly();
 		}
 		
-		public void swim()
+		public void Swim()
 		{
-			Console.WriteLine("All ducks float, even decoys!!!");
+			Console.WriteLine("I'm swimming!!!");
 		}
 
 		public void SetFlyBehaviour(IFlyBehaviour fb)

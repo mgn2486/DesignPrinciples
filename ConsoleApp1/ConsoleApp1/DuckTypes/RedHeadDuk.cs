@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ConsoleApp1.QuackBehaviour;
 
 namespace ConsoleApp1.DuckTypes
 {
@@ -14,7 +11,7 @@ namespace ConsoleApp1.DuckTypes
 		}
 
 
-		public override void display()
+		public override void Display()
 		{
 			Console.WriteLine("I'm red duck that squack a lot");
 		}

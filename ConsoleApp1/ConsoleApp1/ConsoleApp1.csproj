@@ -64,7 +64,7 @@
   <ItemGroup>
     <Compile Include="DuckTypes\RedHeadDuk.cs" />
     <Compile Include="FlyBehaviour\FlyRocketPowered.cs" />
-    <Compile Include="Main_Duck_Class\Duck.cs" />
+    <Compile Include="DuckTypes\Duck.cs" />
     <Compile Include="DuckTypes\ModelDuck.cs" />
     <Compile Include="Interfaces\IFlyBehaviour.cs" />
     <Compile Include="FlyBehaviour\FlyNoWay.cs" />

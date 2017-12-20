@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ConsoleApp1.QuackBehaviour;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.DuckTypes
 {
 	public class MallardDuck : Duck
 	{
@@ -13,7 +10,7 @@ namespace ConsoleApp1
 		{
 		}
 
-		public override void display()
+		public override void Display()
 		{
 			Console.WriteLine("I'm a real Mallard duck");
 		}

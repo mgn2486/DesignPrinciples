@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ConsoleApp1.DuckTypes;
 using ConsoleApp1.FlyBehaviour;
 
@@ -16,13 +12,13 @@ namespace ConsoleApp1
 
 			mallard.PerformQuack();
 			mallard.PerformFly();
-			mallard.display();
+			mallard.Display();
 
 			Console.WriteLine("\n #################################################### \n");
 
 			Duck modelDuck = new ModelDuck();
 
-			modelDuck.display();
+			modelDuck.Display();
 			modelDuck.PerformFly();
 			modelDuck.SetFlyBehaviour(new FlyRocketPowered());
 			modelDuck.PerformFly();
@@ -31,7 +27,7 @@ namespace ConsoleApp1
 
 			Duck redheaq = new RedHeadDuk();
 
-			redheaq.display();
+			redheaq.Display();
 			redheaq.PerformFly();
 			redheaq.SetFlyBehaviour(new FlyRocketPowered());
 			redheaq.PerformFly();
