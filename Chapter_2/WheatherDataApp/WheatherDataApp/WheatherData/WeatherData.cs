@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using WheatherDataApp.Interfaces;
 
 namespace WheatherDataApp.WheatherData
@@ -19,6 +14,7 @@ namespace WheatherDataApp.WheatherData
 		{
 			observers = new List<IObserver>();
 		}
+
 		public void registerObserver(IObserver o)
 		{
 			observers.Add(o);
@@ -43,6 +39,15 @@ namespace WheatherDataApp.WheatherData
 		public void measurementsChanged()
 		{
 			NotifyObserver();
+		}
+
+		public void setMeasurements(float temperature, float humidity, float pressure)
+		{
+			this.temperature = temperature;
+			this.humidity = humidity;
+			this.pressure = pressure;
+
+			measurementsChanged();
 		}
 	}
 }
