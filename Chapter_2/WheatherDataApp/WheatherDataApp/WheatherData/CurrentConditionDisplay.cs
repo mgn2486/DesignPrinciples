@@ -7,7 +7,7 @@ namespace WheatherDataApp.WheatherData
 	{
 		private float temperature;
 		private float humidity;
-		private ISubject weatherData;
+		//private ISubject weatherData;
 		private float heatIndex;
 		private IDisposable unsubscriber;
 

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89187954-8EE7-487E-A99B-ED357E434F23}</ProjectGuid>
+    <ProjectGuid>{FB3D94A4-853C-4916-BA30-BE0C9366E209}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WheatherDataApp</RootNamespace>
-    <AssemblyName>WheatherDataApp</AssemblyName>
+    <RootNamespace>Observer_Basic_Example</RootNamespace>
+    <AssemblyName>Observer_Basic_Example</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,15 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IDisplayElement.cs" />
-    <Compile Include="Interfaces\IObserver.cs" />
-    <Compile Include="Interfaces\ISubject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WheatherData\CurrentConditionDisplay.cs" />
-    <Compile Include="WheatherData\TemperatureReadings.cs" />
-    <Compile Include="WheatherData\Unsubscriber.cs" />
-    <Compile Include="WheatherData\WeatherData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
