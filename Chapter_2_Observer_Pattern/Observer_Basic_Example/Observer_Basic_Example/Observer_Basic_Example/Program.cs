@@ -109,9 +109,7 @@ namespace Observer_Basic_Example
 		}
 
 		/// <summary>
-
 		/// The 'ConcreteObserver' class
-
 		/// </summary>
 
 		class ConcreteObserver : Observer
@@ -123,8 +121,7 @@ namespace Observer_Basic_Example
 
 			// Constructor
 
-			public ConcreteObserver(
-			  ConcreteSubject subject, string name)
+			public ConcreteObserver( ConcreteSubject subject, string name)
 			{
 				this._subject = subject;
 				this._name = name;
