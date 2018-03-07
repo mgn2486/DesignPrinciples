@@ -23,8 +23,6 @@ namespace Singletton_App
 
             Console.ReadLine();
 
-
-
         }
 
     }
