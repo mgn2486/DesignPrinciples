@@ -14,7 +14,7 @@ namespace SinglettonDesignPattern
         private static ChocolateBuilder uniqueInstance;
         private static readonly object padlock = new object();
 
-        public ChocolateBuilder()
+        private ChocolateBuilder()
         {
             empty = true;
             boiled = false;
